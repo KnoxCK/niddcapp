@@ -1,4 +1,63 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
+.wrapper {
+	background-color: white;
+	background-size: cover !important;
+	height: 100vh;
+	border: 8px solid #CAD1B8;
+}
+.banner-content {
+	display: flex;
+	justify-content: left;
+}
+.niddcap-info {
+	color: #71706E;
+	margin-left: 30px;
+	margin-top: 40px;
+	p {
+		font-size: 12px;
+		letter-spacing: 1.5px;
+		margin-bottom: 5px;
+		font-weight: lighter;
+	}
+	a {
+		color: #71706E;
+	}
+	a:hover {
+		color: #CAD1B8;
+	}
+	span {
+		font-size: 13px;
+		font-weight: normal;
+	}
+}
+.niddcap-logo {
+	img {
+		width: 650px;
+		position: absolute;
+    	bottom: 0px;
+    	right: 0px;
+	}
+}
+
+//Desktop only
+@media only screen and (min-width:769px){
+}
+@media only screen and (max-width:650px){ 
+	.niddcap-logo {
+		img {
+			width: 100%;
+
+		}
+	}
+	.wrapper {
+		border: 4px solid #CAD1B8;
+	}
+}
+// IPHONE 5 – landscape 500 - 600
+@media only screen and (min-width: 500px) and (max-width:600px){ 
+}
+// IPHONE 6 & Plus– portrait 360 - 500
+@media only screen and (min-width: 360px) and (max-width:500px){ 
+}
+// IPHONE 5 & smaller – portrait max 359
+@media only screen and (max-width:359px){ 
+}
